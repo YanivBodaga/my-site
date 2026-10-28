@@ -22,7 +22,12 @@
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
+*.log
+
+# claude code personal settings
+.claude/settings.local.json
 
 # debug
 npm-debug.log*
