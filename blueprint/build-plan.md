@@ -10,7 +10,7 @@ OpenNext, set up RTL, add the brand tokens, fonts, logo and favicon, and create 
 ## Your features
 
 - [x] 1. **Site layout** - Hebrew RTL header with logo and menu, mobile menu, and a footer with contact and legal links
-- [ ] 2. **Home hero** - headline on what Yaniv builds with AI, with buttons to call, WhatsApp or open the chat
+- [x] 2. **Home hero** - headline on what Yaniv builds with AI, with buttons to call, WhatsApp or open the chat
 - [ ] 3. **What I build** - cards for personal sites, business sites, dashboards and AI agents, plus the work process steps
 - [ ] 4. **Portfolio** - project grid with category filter, loaded from one MDX file per project
 - [ ] 5. **Case study pages** - a page per project: the problem, what was built, the result, screenshots and a live link

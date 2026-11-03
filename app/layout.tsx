@@ -19,7 +19,7 @@ const firaCode = Fira_Code({
 export const metadata: Metadata = {
   title: "יניב בודאגה",
   description:
-    "יניב בודאגה בונה עם AI אתרים אישיים, אתרים לעסקים, דשבורדים וסוכני AI.",
+    "יניב בודאגה בונה אתרים אישיים, אתרים לעסקים, דשבורדים וסוכני AI.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

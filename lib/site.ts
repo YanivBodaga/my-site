@@ -15,6 +15,8 @@ export const SITE = {
   },
 } as const;
 
+export const WHATSAPP_URL = `https://wa.me/${SITE.contact.whatsapp}`;
+
 export const NAV_ITEMS: NavItem[] = [
   { label: "מה אני בונה", href: "/#services" },
   { label: "עבודות", href: "/#portfolio" },

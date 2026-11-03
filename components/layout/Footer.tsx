@@ -1,6 +1,6 @@
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import Link from "next/link";
-import { LEGAL_LINKS, SITE } from "@/lib/site";
+import { LEGAL_LINKS, SITE, WHATSAPP_URL } from "@/lib/site";
 import Logo from "./Logo";
 
 // Cached because Cache Components rejects new Date() in a prerendered shell.
@@ -13,7 +13,7 @@ const linkClass =
   "inline-flex items-center gap-2 underline underline-offset-4 hover:text-accent focus-visible:outline-accent";
 
 export default function Footer() {
-  const { phoneDisplay, phoneHref, whatsapp, email } = SITE.contact;
+  const { phoneDisplay, phoneHref, email } = SITE.contact;
 
   return (
     <footer className="bg-navy text-white">
@@ -32,7 +32,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href={`https://wa.me/${whatsapp}`}
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={linkClass}

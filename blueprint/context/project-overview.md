@@ -1,6 +1,6 @@
 # Yaniv Bodaga - Project Overview
 
-<!-- blueprint:source-hash 31ea023783656ca9bd12715d0f38987078e72a6a3d5d8e2d526dd4b2ea9349c4 -->
+<!-- blueprint:source-hash 91a34ad981a0f008b81facbe92e8c46a11d980181f6e85892ce8619100b100bd -->
 
 > A Hebrew-only, RTL personal website that wins Yaniv's trust with visitors and turns them into
 > phone, WhatsApp, email or AI-chat leads for AI-built websites, dashboards, agents and automations.
