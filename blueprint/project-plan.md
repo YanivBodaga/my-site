@@ -127,7 +127,9 @@ Follow `BRAND.md` exactly.
   - `ANTHROPIC_API_KEY`: the Claude API key
   - `RESEND_API_KEY`: the email sending key
   - `LEAD_EMAIL_TO`: the address that receives leads
-  - `CONTACT_EMAIL`, `CONTACT_PHONE`, `WHATSAPP_NUMBER`: the contact details shown on the site
+- **Contact details (not secrets):** the phone, WhatsApp number and email shown on the site live
+  in a committed config file (`lib/site.ts`). They are public anyway, and most pages are static,
+  so runtime secrets wouldn't be available when the pages are built.
 - **Database or storage:** none. Portfolio images are in the repo.
 - **Workers or cron jobs:** none
 - **Rate limiting:** a Cloudflare rate-limiting rule on `/api/chat`

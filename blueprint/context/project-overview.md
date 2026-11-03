@@ -1,6 +1,6 @@
 # Yaniv Bodaga - Project Overview
 
-<!-- blueprint:source-hash 42cf627e6b00ba6d7c0a43e2c53b620e1fab8b11525ea3545329bfa9e7206844 -->
+<!-- blueprint:source-hash 31ea023783656ca9bd12715d0f38987078e72a6a3d5d8e2d526dd4b2ea9349c4 -->
 
 > A Hebrew-only, RTL personal website that wins Yaniv's trust with visitors and turns them into
 > phone, WhatsApp, email or AI-chat leads for AI-built websites, dashboards, agents and automations.
@@ -200,7 +200,9 @@ Routes are derived from the features; the plans name only `/api/chat`, so the pa
   GitHub `main`.
 - **Local preview:** `npx opennextjs-cloudflare preview`
 - **Secrets** (Cloudflare secrets, never in code): `ANTHROPIC_API_KEY`, `RESEND_API_KEY`,
-  `LEAD_EMAIL_TO`, `CONTACT_EMAIL`, `CONTACT_PHONE`, `WHATSAPP_NUMBER`
+  `LEAD_EMAIL_TO`
+- **Contact details** (public, not secrets): phone, WhatsApp number and email live in the
+  committed `lib/site.ts`, because static pages can't read runtime secrets at build time.
 - **Storage, database, cron:** none. Portfolio images live in the repo.
 - **Rate limiting:** a Cloudflare rule on `/api/chat`
 - **Health check:** none. `/` is enough.
@@ -218,10 +220,6 @@ Routes are derived from the features; the plans name only `/api/chat`, so the pa
 - **Forward dependencies in build order.** Feature 1's footer links to legal pages (Feature 8)
   and contact (Feature 7), and Feature 2's hero has an "open the chat" button, but the chat widget
   is Feature 9. Decide between placeholder links or buttons and reordering.
-- **Contact details as runtime secrets.** `CONTACT_EMAIL`, `CONTACT_PHONE` and `WHATSAPP_NUMBER`
-  are listed as Cloudflare secrets, but they appear on pages that are rendered statically. Runtime
-  secrets aren't available at build time. They could be build-time variables or plain config,
-  since they are public anyway.
 - **Portfolio categories.** The category filter values aren't defined. They could be the four
   "What I build" types (personal sites, business sites, dashboards, AI agents), but the plans
   don't say so.
